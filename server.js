@@ -26,6 +26,7 @@ app.get('/', (req, res) => {
     .then(data => {
         let quote = data[Math.floor(Math.random() * data.length)]
         res.render('index.ejs', {quote: quote})
+        res.send(quote)
     })
     .catch(err => console.error(err))
 })
