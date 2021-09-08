@@ -25,7 +25,8 @@ app.get('/', (req, res) => {
     db.collection('quotes').find().toArray()
     .then(data => {
         let quote = data[Math.floor(Math.random() * data.length)]
-        res.send(quote)
+        let json = JSON.stringify({quote: quote})
+        res.send(json)
         
     })
     .catch(err => console.error(err))
