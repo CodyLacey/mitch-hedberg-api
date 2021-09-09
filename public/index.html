@@ -5,24 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mitch Hedberg Quotes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/560ecaf078.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <section>
-        <h1>Mitch Hedberg Quotes</h1>
-        <h2>An API for Mitch Hedberg Quotes</h2>
-        <a href="https://mitch-hedberg-api.herokuapp.com">mitch-hedberg-api.herokuapp.com<a>
-    </section>
-    <section>
-        <span id='faq'><i class="far fa-question-circle"></i></span>
-        <span id='refresh'><i class="fas fa-redo"></i></span>
-    </section>
-    <section>
-        <span id="quote"></span>
-        <span>- Mitch Hedberg</span>
-    </section>
-    <section>
-        <img src="images/mitch.png" alt="">
+    <section class="api">
+        <section class="header">
+            <h1>Mitch Hedberg API</h1>
+            <h2>An API for Mitch Hedberg Quotes</h2>
+            <a href="https://mitch-hedberg-api.herokuapp.com" target="_blank">mitch-hedberg-api.herokuapp.com<a>
+        </section>
+        <section class="tool">
+            <span id='refresh'> <i class="fas fa-redo"></i> </span>
+        </section>
+        <section class="quote">
+            <span id="quote"></span>
+            <span>- Mitch Hedberg</span>
+        </section>
+        <section id="faqSection" class="transform">
+            <h2>How do I use this?</h2>
+            <section id="code"></section>
+        </section>
+        <section class="footer">
+            <img src="images/mitch.png" alt="">
+        </section>
     </section>
     <script src="js/main.js"></script>
 </body>
